@@ -45,15 +45,20 @@
     to {top:0%; bottom:50%; opacity:0;}
 }
 @keyframes textPihaCentre{
-    50% {opacity: 0;}
+    50% {opacity: 0; scale: 0.5;}
+    100% {scale: 1;}
 }
 @-webkit-keyframes textPihaCentre{
     50% {opacity: 0;}
+    100% {scale: 1;}
+}
+.text-container {
+    text-align: center;
+    color: white;
 }
 .text_Piha_Centre{
     font-family:monospace;
     font-size: 50px;
-    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,7 +69,6 @@
 .text_Piha_Bottom{
     font-family:monospace;
     font-size: 50px;
-    color: black;
     position: absolute;
     top: 10%;
     left: 5%;
@@ -72,7 +76,6 @@
 .text_Piha_Right{
     font-family:monospace;
     font-size: 50px;
-    color: black;
     position: absolute;
     top: 10%;
     left: 10%;
