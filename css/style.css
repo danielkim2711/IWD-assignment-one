@@ -18,14 +18,10 @@ body {
     font-size: 0px;
 }
 
-.piha-txt a {
-    color: green;
-}
-
 .piha-text-1 {
     position: absolute;
     top: 25px;
-    left: 35%;
+    left: 32%;
     color: white;
     animation: txtAnimation1;
     -webkit-animation: txtAnimation1;
@@ -36,8 +32,8 @@ body {
 
 .piha-text-2 {
     position: absolute;
-    top: 65px;
-    left: 35%;
+    top: 105px;
+    left: 32%;
     color: white;
     animation: txtAnimation2;
     -webkit-animation: txtAnimation2;
@@ -47,15 +43,11 @@ body {
 }
 
 .piha-text-3 {
+    font-size: 50px;
     position: absolute;
-    top: 105px;
-    left: 35%;
+    top: 300px;
+    left: 5%;
     color: white;
-    animation: txtAnimation3;
-    -webkit-animation: txtAnimation3;
-    animation-iteration-count: 1;
-    animation-duration: 7s;
-    animation-delay: 14s;
 }
 
 .piha-text-4 {
@@ -68,6 +60,10 @@ body {
     -webkit-animation: txtAnimation4;
     animation-iteration-count: 1;
     animation-duration: 10s;
+}
+
+.piha-img-3 a {
+    color: green;
 }
 
 /* images */
