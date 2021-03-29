@@ -1,31 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset = "UTF-8">
-<title>Piha | New Zealand</title>
-<link rel = "stylesheet" href = "./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piha | New Zealand</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<header>
-<div class = "container">
-<div id = "images">
-<img class = "img-Centre" src = "./img/1.jpg" alt = "Piha Beach">
-<img class = "img-Right" src = "./img/2.jpg" alt = "Piha Beach">
-<img class = "img-Bottom" src = "./img/3.jpg" alt = "Piha Beach">
-<h1 class = "text-Centre">PIHA</h1>
-<h1 class = "text-Right">AWESOME</h1>
-<h1 class = "text-Bottom"><a href = "http://www.piha.co.nz/" target = "_blank">Click ME!</a><br>Visit Piha Today!</h1>
-</div>
-<nav>
-<ul>
-<li class = "current"><a href = "index.html">Home</a></li>
-<li><a href = "about.html">About</a></li>
-<li><a href = "contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
-</div>
-<script>
-</script>
+    <div class="container">
+        <div class="piha-img">
+            <img class="piha-img-1" src="img/1.jpg" alt="Beautiful piha image">
+            <img class="piha-img-2" src="img/2.jpg" alt="Beautiful piha image">
+            <div class="piha-img-3">
+                <img src="img/3.jpg" alt="Beautiful piha image">
+                <h1 class="piha-text-4">Daniel Kim 1460482</h1>
+            </div>
+        </div>
+        <div class="piha-txt">
+            <h1 class="piha-text-1">Piha</h1>
+            <h1 class="piha-text-2">Beauty</h1>
+            <h1 class="piha-text-3"><a href="http://www.piha.co.nz" target="_blank">Visit Piha Today!</a></h1>
+        </div>
+    </div>
+
+    <div id="top-menu">
+        <nav>
+            <ul>
+                <li class="current"><a href="#">Page 1</a></li>
+                <li class><a href="#">Page 2</a></li>
+                <li class><a href="#">Page 3</a></li>
+                <li class><a href="#">Page 4</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section-aside">
+        <aside id="part-2">
+            <img src="img/2.jpg" alt="Piha">
+
+        </aside>
+
+        <section id="part-3">
+            <div class="contact-left">
+                <h1>Title</h1>
+
+                <form action="">
+                    <label for="progress"></label>
+                    <progress id="progress" value="25" max="100"></progress>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" placeholder="Type Message" id="message" cols="30" rows="10"></textarea>
+
+                    <label for="date">When would you like to stay?</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="radio">Radio Button 1</label>
+                    <input type="radio" id="radio" name="radio">
+
+                    <label for="radio">Radio Button 2</label>
+                    <input type="radio" id="radio" name="radio">
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+    <footer id="footer">
+        &copy; Daniel Kim 2021
+    </footer>
+
 </body>
+
 </html>

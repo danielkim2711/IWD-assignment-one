@@ -1,0 +1,246 @@
+body {
+    font: 20px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border: yellow 5px solid;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border: green 5px solid;
+}
+
+.container #texts {
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#images {
+    position: relative;
+    width: 80%;
+    padding-top: 50px;
+    border: red 5px solid;
+}
+
+#images img {
+    position:absolute;
+    height: 50%;
+    border: black 5px solid;
+}
+
+#images .img-Centre {
+    animation: imgAnimation1;
+    -webkit-animation: imgAnimation1;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 15s;
+    animation-direction: alternate;
+}
+
+#images .img-Right {
+    animation: imgAnimation2;
+    -webkit-animation: imgAnimation2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 15s;
+    animation-direction: alternate;
+}
+
+#images .img-Bottom {
+    animation: imgAnimation3;
+    -webkit-animation: imgAnimation3;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 15s;
+    animation-direction: alternate;
+}
+
+@keyframes imgAnimation1 {
+    0% {bottom: 0%; opacity: 1;}
+    25% {bottom: 25%; opacity: 0.5;}
+    50% {bottom: 50%; opacity: 0;}
+    75% {opacity: 0}
+    100% {opacity: 0;}
+}
+
+@keyframes imgAnimation2 {
+    0% {opacity: 0;}
+    25% {right: 25%; opacity: 0.5;}
+    50% {right: 50%; opacity: 1;}
+    75% { opacity: 0.5}
+    100% {opacity: 0;}
+}
+
+@keyframes imgAnimation3 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0.5}
+    100% {opacity: 1;}
+}
+
+header a {
+    text-decoration: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 25px;
+    border: red 5px solid;
+}
+
+header a:hover {
+    background: #333;
+    font-weight: bold;
+
+}
+
+/* Sidebar */
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    border: red 5px solid;
+}
+
+#main {
+    float: right;
+    border: black 5px solid;
+}
+
+/*
+
+.imageCentre{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: pihaCentre 5s;
+}
+
+.imageBottom{
+    position: absolute;
+    animation: pihaBottom 5s;
+    -webkit-animation: pihaBottom 5s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+.imageRight{
+    float: right;
+    position: absolute;
+    animation: pihaRight 5s;
+    -webkit-animation: pihaRight 5s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+
+
+@keyframes pihaCentre {
+    100% {opacity: 0;}
+}
+
+@keyframes pihaRight{
+    from {right:0%; top:0%;}
+    to {right:25%; top:0%;}
+}
+
+@-webkit-keyframes pihaRight
+    from {right:0%; top:0%;}
+    to  {right:25%; top:0%;}
+}
+
+@keyframes pihaBottom{
+    from {top:50%; bottom:0%; left:35%; opacity:1;}
+    to {top:0%; bottom:50%; left:35%; opacity:0;}
+}
+
+@-webkit-keyframes pihaBottom { 
+    from {top:50%; bottom:0%; opacity:1;}
+    to {top:0%; bottom:50%; opacity:0;}
+}
+
+@keyframes textPihaCentre{
+    50% {opacity: 0; scale: 0.5;}
+    100% {scale: 1;}
+}
+
+@-webkit-keyframes textPihaCentre { 
+    50% {opacity: 0;}
+    100% {scale: 1;}
+}
+
+.text-container {
+    text-align: center;
+    color: white;
+}
+
+.text_Piha_Centre{
+    font-family:monospace;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: textPihaCentre 1s;
+    -webkit-animation: textPihaCentre 1s;
+}
+
+.text_Piha_Bottom{
+    font-family:monospace;
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.text_Piha_Right{
+    font-family:monospace;
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.nav {
+    overflow: auto;
+    background-color: #333;
+    padding: 10px;
+    margin: 10px;
+    font-family:Tahoma;
+    font-weight: bold;
+    border: 2px solid;
+    display: block;
+}
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: red;
+    color: black;
+} */
