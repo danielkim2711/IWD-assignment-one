@@ -6,7 +6,6 @@ body {
 /* header */
 
 .container {
-    margin: 0 auto;
     border: 5px solid red;
     height: 430px;
     background-color: skyblue;
@@ -148,7 +147,7 @@ nav li {
 section {
     border: 3px solid blue;
     padding: 25px;
-    width: 65%;
+    width: 70%;
     float: left;
     height: 550px;
 }
@@ -159,16 +158,82 @@ section h1 {
 
 /* aside */
 
+#part-2 {
+    position: relative;
+}
+
+.part-2-txt-1 {
+    top: 100px;
+    left: 30px;
+    position: absolute;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.part-2-txt-2 {
+    top: 100px;
+    left: 30px;
+    position: absolute;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.part-2-txt-3 {
+    top: 100px;
+    left: 30px;
+    position: absolute;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.part-2-txt-4 {
+    top: 100px;
+    left: 30px;
+    position: absolute;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
 aside {
     border: 5px solid green;
     float: right;
-    width: 30%;
+    width: 25%;
     height: auto;
 }
 
 aside img {
-    width: 420px;
+    width: 350px;
     height: 600px;
+}
+
+.part-2-img-1 {
+    /* animation: part2Animation1;
+    -webkit-animation: part2Animation1;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-delay: 0s; */
+    width: 350px;
+    height: 250px;
+    float: left;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-animation: part2Animation1 12s infinite;
+            animation: part2Animation1 12s infinite;
+    -webkit-animation-timing-function: steps(1, end);
+            animation-timing-function: steps(1, end);
 }
 
 /* footer */
@@ -187,7 +252,7 @@ label {
 /* animation */
 
 @keyframes imgAnimation1 {
-    0% {bottom: 0%; opacity:1;}
+    0% {bottom: 25%; opacity:1;}
     20% {opacity:1;}
     33.3% {opacity:1;}
     50% {bottom:37%; opacity:1}
@@ -241,4 +306,24 @@ label {
 @keyframes txtAnimation4 {
     0% {background-color: red; opacity: 0;}
     100% {background-color: red; opacity: 1;}
+}
+
+@keyframes part2Animation1 {
+    0% {opacity: 1;}
+    33% {background-image: url("../../../../");}
+    66% {background-image: url("../img/4.jpg");}
+    100% {background-image: url("../img/1.jpg");}
+}
+
+/* div{
+    width: 350px;
+    height: 250px;
+    float: left;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-animation: test 12s infinite;
+            animation: test 12s infinite;
+    -webkit-animation-timing-function: steps(1, end);
+            animation-timing-function: steps(1, end);
 }
