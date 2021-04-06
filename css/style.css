@@ -6,7 +6,7 @@ body {
 /* header */
 
 .container {
-    border: 5px solid red;
+    border: 5px solid #ff0000;
     height: 430px;
     background-color: skyblue;
 }
@@ -21,7 +21,7 @@ body {
     position: absolute;
     top: 25px;
     left: 32%;
-    color: white;
+    color: #fff;
     animation: txtAnimation1;
     -webkit-animation: txtAnimation1;
     animation-iteration-count: infinite;
@@ -33,7 +33,7 @@ body {
     position: absolute;
     top: 105px;
     left: 32%;
-    color: white;
+    color: #fff;
     animation: txtAnimation2;
     -webkit-animation: txtAnimation2;
     animation-iteration-count: 1;
@@ -46,7 +46,7 @@ body {
     position: absolute;
     top: 300px;
     left: 5%;
-    color: white;
+    color: #fff;
 }
 
 .piha-text-4 {
@@ -54,7 +54,7 @@ body {
     position: absolute;
     top: 250px;
     left: 40%;
-    color: white;
+    color: #fff;
     animation: txtAnimation4;
     -webkit-animation: txtAnimation4;
     animation-iteration-count: 1;
@@ -139,9 +139,8 @@ nav li {
 
 .section-aside {
     margin-top: 40px;
-    padding: 10px;
     border: 5px yellow solid;
-    height: 600px;
+    height: 700px;
 }
 
 section {
@@ -149,7 +148,7 @@ section {
     padding: 25px;
     width: 70%;
     float: left;
-    height: 550px;
+    height: 650px;
 }
 
 section h1 {
@@ -210,12 +209,7 @@ aside {
     border: 5px solid green;
     float: right;
     width: 25%;
-    height: auto;
-}
-
-aside img {
-    width: 350px;
-    height: 600px;
+    height: 700px;
 }
 
 .part-2-img-1 {
@@ -224,21 +218,42 @@ aside img {
     animation-iteration-count: 1;
     animation-duration: 6s;
     animation-delay: 0s; */
-    width: 350px;
-    height: 250px;
-    float: left;
-    background-size: contain;
+    width: 355px;
+    height: 700px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    -webkit-animation: part2Animation1 12s infinite;
-            animation: part2Animation1 12s infinite;
-    -webkit-animation-timing-function: steps(1, end);
-            animation-timing-function: steps(1, end);
+    background-size: cover;
+    -webkit-animation: part2Animation1 15s infinite ease-in-out;
+            animation: part2Animation1 15s infinite ease-in-out;
+}
+
+/* Form */
+
+.section-left {
+    text-align: center;
+    border-radius: 2px solid black;
+}
+
+.progress {
+}
+
+input {
+    margin: 1em;
+}
+
+label {
+    padding: 1rem;
+    text-align: left;
+    margin-right: 5em;
+}
+
+.radio {
+    display: block;
 }
 
 /* footer */
 
-#footer {
+footer {
     border: 5px solid red;
     margin-top: 5px;
     text-align: center;
@@ -310,9 +325,9 @@ label {
 
 @keyframes part2Animation1 {
     0% {opacity: 1;}
-    33% {background-image: url("../../../../");}
-    66% {background-image: url("../img/4.jpg");}
-    100% {background-image: url("../img/1.jpg");}
+    33% {background-image: url(../img/camping.jpg); opacity: 0.2;}
+    66% {background-image: url(../img/waterfall.jpg); opacity: 1;}
+    100% {background-image: url(../img/hiking.jpg); opacity: 1;}
 }
 
 /* div{
