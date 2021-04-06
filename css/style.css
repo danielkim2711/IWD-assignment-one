@@ -85,7 +85,7 @@ body {
 
 .piha-img-2 {
     position: absolute;
-    right: 25%;
+    right: 35%;
     animation: imgAnimation2;
     -webkit-animation: imgAnimation2;
     animation-iteration-count: 1;
@@ -95,22 +95,13 @@ body {
 
 .piha-img-3 {
     position: absolute;
-    right: 25%;
+    right: 35%;
     animation: imgAnimation3;
     -webkit-animation: imgAnimation3;
     animation-iteration-count: 1;
     animation-duration: 33s;
     animation-delay: 0s;
 }
-
-/*
-
-    animation: imgAnimation3;
-    -webkit-animation: imgAnimation3;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-duration: 15s;
-    animation-direction: alternate; */
 
 /* navigation */
 
@@ -141,6 +132,7 @@ nav li {
     margin-top: 40px;
     border: 5px yellow solid;
     height: 700px;
+    position: relative;
 }
 
 section {
@@ -161,50 +153,6 @@ section h1 {
     position: relative;
 }
 
-.part-2-txt-1 {
-    top: 100px;
-    left: 30px;
-    position: absolute;
-    font-weight: bold;
-    font-family: cursive;
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-}
-
-.part-2-txt-2 {
-    top: 100px;
-    left: 30px;
-    position: absolute;
-    font-weight: bold;
-    font-family: cursive;
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-}
-
-.part-2-txt-3 {
-    top: 100px;
-    left: 30px;
-    position: absolute;
-    font-weight: bold;
-    font-family: cursive;
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-}
-
-.part-2-txt-4 {
-    top: 100px;
-    left: 30px;
-    position: absolute;
-    font-weight: bold;
-    font-family: cursive;
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-}
-
 aside {
     border: 5px solid green;
     float: right;
@@ -212,29 +160,68 @@ aside {
     height: 700px;
 }
 
-.part-2-img-1 {
-    /* animation: part2Animation1;
-    -webkit-animation: part2Animation1;
+#part-2-images > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: part2Animation1 16s linear 0s;
+    -webkit-animation: part2Animation1 16s linear 0s;
     animation-iteration-count: 1;
-    animation-duration: 6s;
-    animation-delay: 0s; */
-    width: 355px;
-    height: 700px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-animation: part2Animation1 15s infinite ease-in-out;
-            animation: part2Animation1 15s infinite ease-in-out;
 }
+
+#part-2-images > img:nth-child(2) {
+    background-image: url(../img/camping.jpg);
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+#part-2-images > img:nth-child(3) {
+    background-image: url(../img/waterfall.jpg);
+    animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+}
+
+#part-2-images > img:nth-child(4) {
+    background-image: url(../img/waterfall.jpg);
+    animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+}
+
+#part-2 h1 {
+    top: 100px;
+    left: 30px;
+    position: absolute;
+    font-weight: bold;
+    font-family: cursive;
+    opacity: 0;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    animation: part2Animation2 16s linear 0s;
+}
+
+#part-2 h1:nth-child(2) {
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+#part-2 h1:nth-child(3) {
+    animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+}
+
+#part-2 h1:nth-child(4) {
+    animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+}
+
 
 /* Form */
 
 .section-left {
     text-align: center;
     border-radius: 2px solid black;
-}
-
-.progress {
 }
 
 input {
@@ -267,10 +254,10 @@ label {
 /* animation */
 
 @keyframes imgAnimation1 {
-    0% {bottom: 25%; opacity:1;}
+    0% {bottom: 25%; opacity:1; margin-bottom: }
     20% {opacity:1;}
     33.3% {opacity:1;}
-    50% {bottom:37%; opacity:1}
+    50% {bottom:54%; opacity:1}
     92% {opacity:0;}
     95% {opacity:0;}
     100% {opacity:0;}
@@ -279,7 +266,7 @@ label {
 @keyframes imgAnimation2 {
     0% {right:0%; opacity:0;}
     20% {opacity:0;}
-    33.3% {right: 25%; opacity:1;}
+    33.3% {right: 30%; opacity:1;}
     50% { opacity:1;}
     92% { opacity:0;}
     100% {opacity:0;}
@@ -324,21 +311,17 @@ label {
 }
 
 @keyframes part2Animation1 {
-    0% {opacity: 1;}
-    33% {background-image: url(../img/camping.jpg); opacity: 0.2;}
-    66% {background-image: url(../img/waterfall.jpg); opacity: 1;}
-    100% {background-image: url(../img/hiking.jpg); opacity: 1;}
+    0% {opacity: 0; animation-timing-function: ease-in}
+    8% {opacity: 1; animation-timing-function: ease-out;}
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
 }
 
-/* div{
-    width: 350px;
-    height: 250px;
-    float: left;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    -webkit-animation: test 12s infinite;
-            animation: test 12s infinite;
-    -webkit-animation-timing-function: steps(1, end);
-            animation-timing-function: steps(1, end);
+@keyframes part2Animation2 {
+    0% {opacity: 0; animation-timing-function: ease-in}
+    8% {opacity: 1; animation-timing-function: ease-out;}
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
 }
