@@ -11,18 +11,16 @@
 
 <body>
     <div class="container">
-        <div id="part-1-images">
-            <img class="piha-img-1" src="img/1.jpg" alt="Piha image 1">
-            <img class="piha-img-2" src="img/2.jpg" alt="Piha image 2">
-            <img src="img/3.jpg" alt="Piha image 3">
-            <div class="piha-img-3">
-                <h1 class="piha-text-3"><a href="http://www.piha.co.nz" target="_blank">Visit Piha!</a></h1>
-                <h1 class="piha-text-4">Daniel Kim 1460482</h1>
-            </div>
+        <div id="part-1-images" onclick="pihaClick()">
+            <img class="part1-img-1" src="img/1.jpg" alt="Piha image 1">
+            <img class="part1-img-2" src="img/2.jpg" alt="Piha image 2">
+            <img class="part1-img-3" src="img/3.jpg" alt="Piha image 3">
         </div>
-        <div class="piha-txt">
-            <h1 class="piha-text-1">Piha</h1>
-            <h1 class="piha-text-2">Beauty</h1>
+        <div id="part-1-txts">
+            <h1 class="part1-text-1">Piha</h1>
+            <h1 class="part1-text-2">Beauty</h1>
+            <h1 class="part1-text-3">Visit Piha Today!</a></h1>
+            <h1 class="part1-text-4">Daniel Kim 1460482</h1>
         </div>
     </div>
 
@@ -49,23 +47,25 @@
             <div id="part-2-texts">
                 <h1 class="part-2-txt-1">Switch camping for glamping</h1>
                 <h1 class="part-2-txt-2">Find new escapes</h1>
-                <h1 class="part-2-txt-3">Discover pristine greenery</h1>
-                <h1 class="part-2-txt-4">See Gisborne in a new light</h1>
-                <h1 class="part-2-txt-5">Daniel Kim 1460482</h1>
-                <a href="https://www.airnewzealand.co.nz" target="_blank">Find out<br>more</a>
+                <h1 class="part-2-txt-3">Discover <br>pristine greenery</h1>
+                <a href="https://www.airnewzealand.co.nz" target="_blank">Find out more</a>
             </div>
+            <h1 class="part-2-txt-4">See Gisborne <br>in a new light</h1>
+            <h1 class="part-2-txt-5">Daniel Kim 1460482</h1>
+
+            <button id="replay-btn" onclick="replayBtn()"></button>
         </aside>
 
         <section id="part-3">
             <div class="section-left">
                 <div class="section-left-title">
-                    <h1>Welcome</h1>
+                    <h1>Booking Information</h1>
                     <progress id="progress" value="25" max="100"></progress>
                 </div>
 
                 <form action="summary.html" method="GET">
                     <div>
-                        <label for="name">Please Give us your Name</label>
+                        <label for="name">Enter your Name</label>
                         <input type="text" id="name" name="name" placeholder="Your Name">
                     </div>
 
@@ -75,7 +75,7 @@
                     </div>
 
                     <div>
-                        <p>Do you need to use any equipment?</p>
+                        <p>Would you like to use any equipment? (E.g. Swimming goggles, surf board)</p>
                         <label class="radio" for="yes">Yes</label>
                         <input type="radio" id="yes" name="select">
                         <label class="radio" for="no">No</label>

@@ -3,6 +3,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.2em;
+    background-color: #e5e5e5;
 }
 
 /* header */
@@ -11,56 +12,67 @@ body {
     border: 5px solid #ff0000;
     height: 430px;
     background-color: skyblue;
+    position: relative;
+    overflow: hidden;
 }
 
-.piha-txt {
+#part-1-txts {
     text-align: center;
     position: relative;
     font-size: 0px;
+    z-index: 2;
 }
 
-.piha-text-1 {
+.part1-text-1 {
     position: absolute;
     top: 25px;
     left: 32%;
     color: #fff;
+    opacity: 0;
     animation: txtAnimation1;
     -webkit-animation: txtAnimation1;
     animation-iteration-count: infinite;
-    animation-duration: 7s;
-    animation-delay: 0s;
+    animation-duration: 4s;
 }
 
-.piha-text-2 {
+.part1-text-2 {
     position: absolute;
     top: 105px;
     left: 32%;
     color: #fff;
+    opacity: 0;
     animation: txtAnimation2;
     -webkit-animation: txtAnimation2;
     animation-iteration-count: 1;
-    animation-duration: 7s;
-    animation-delay: 7s;
+    animation-duration: 4s;
+    animation-delay: 4s;
 }
 
-.piha-text-3 {
+.part1-text-3 {
+    position: absolute;
+    top: 105px;
+    left: 32%;
+    opacity: 0;
+    color: #fff;
+    animation: txtAnimation3;
+    -webkit-animation: txtAnimation3;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-delay: 8s;
+}
+
+.part1-text-4 {
     font-size: 50px;
     position: absolute;
     top: 300px;
-    left: 5%;
+    left: 35%;
+    opacity: 0;
     color: #fff;
-}
-
-.piha-text-4 {
-    font-size: 50px;
-    position: absolute;
-    top: 250px;
-    left: 40%;
-    color: #fff;
-    animation: txtAnimation4;
-    -webkit-animation: txtAnimation4;
+    animation: txtAnimation4 forwards;
+    -webkit-animation: txtAnimation4 forwards;
     animation-iteration-count: 1;
-    animation-duration: 10s;
+    animation-duration: 4s;
+    animation-delay: 8s;
 }
 
 .piha-img-3 a {
@@ -69,65 +81,48 @@ body {
 
 /* images */
 
-#part-1-images > img {
+#part-1-images img{
+    left: 30%;
+    cursor: pointer;
+}
+
+.part1-img-1 {
     position: absolute;
     top: 0;
-    left: 0;
     width: auto;
     height: auto;
     opacity: 0;
+    z-index: 0;
     animation: imgAnimation1 4s;
     -webkit-animation: imgAnimation1 4s;
 
 }
 
-#part-1-images > img:nth-child(2) {
+.part1-img-2 {
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    z-index: 0;
+    animation: imgAnimation2 4s;
+    -webkit-animation: imgAnimation2 4s;
     animation-delay: 4s;
     -webkit-animation-delay: 4s;
 }
 
-#part-1-images > img:nth-child(3) {
+.part1-img-3 {
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    z-index: 1;
+    animation: imgAnimation3 4s forwards;
+    -webkit-animation: imgAnimation3 4s forwards;
     animation-delay: 8s;
     -webkit-animation-delay: 8s;
 }
-
-/*
-
-#part-1-images {
-    width: 50%;
-    text-align: center;
-}
-
-.piha-img-1 {
-    opacity: 0;
-    left: 30.5%;
-    position: absolute;
-    animation: imgAnimation1;
-    -webkit-animation: imgAnimation1;
-    animation-iteration-count: 1;
-    animation-duration: 11s;
-    animation-delay: 0s;
-}
-
-.piha-img-2 {
-    position: absolute;
-    right: 35%;
-    animation: imgAnimation2;
-    -webkit-animation: imgAnimation2;
-    animation-iteration-count: 1;
-    animation-duration: 33s;
-    animation-delay: 0s;
-}
-
-.piha-img-3 {
-    position: absolute;
-    right: 35%;
-    animation: imgAnimation3;
-    -webkit-animation: imgAnimation3;
-    animation-iteration-count: 1;
-    animation-duration: 33s;
-    animation-delay: 0s;
-} */
 
 /* navigation */
 
@@ -144,6 +139,7 @@ nav {
 }
 
 nav a {
+    font-weight: bold;
     padding-left: 20px;
     padding-right: 50px;
     text-decoration: none;
@@ -169,7 +165,6 @@ nav li {
 }
 
 section {
-    letter-spacing: 1px;
     border: 3px solid blue;
     padding: 25px;
     width: 70%;
@@ -193,6 +188,7 @@ section {
 form {
     margin-top: 50px;
     margin-left: 250px;
+    margin-bottom: 100px;
 }
 
 #progress {
@@ -204,7 +200,7 @@ form label, p {
     font-weight: bold;
     text-align: left;
     margin-top: 15px;
-    width: 30%;
+    width: 40%;
     padding: 10px;
 }
 
@@ -212,23 +208,23 @@ form label, p {
     font-weight: normal;
     border: none;
     padding: 0;
-    width: auto;
     margin: 0;
+    width: auto;
 }
 
 form input, select {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 form select {
-    width: 10%;
-    height: auto;
+    width: 20%;
+    height: 40px;
 }
 
 .btn {
     width: 120px;
     height: 70px;
-    margin: 130px 0px 20px 250px;
+    margin: 50px 0px 20px 300px;
 }
 
 /* aside */
@@ -236,19 +232,10 @@ form select {
 #part-2 {
     position: relative;
     overflow: hidden;
-}
-
-aside {
     border: 5px solid green;
     float: right;
     width: 25%;
     height: 700px;
-}
-
-.Gisborne {
-    z-index: 1;
-    position: absolute;
-    top: 0;
 }
 
 #part-2-images > img {
@@ -258,28 +245,34 @@ aside {
     height: 100%;
     position: absolute;
     opacity: 0;
-    animation: part2Animation1 forwards 8s;
-    -webkit-animation: part2Animation1 forwards 8s;
+    animation: part2Animation1 forwards 12s;
+    -webkit-animation: part2Animation1 forwards 12s;
     animation-iteration-count: 1s;
 }
 
 #part-2-images > img:nth-of-type(2) {
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
 }
 
 #part-2-images > img:nth-of-type(3) {
-    animation-delay: 4s;
-    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
 }
 
 #part-2-images > img:nth-of-type(4) {
-    animation-delay: 6s;
-    -webkit-animation-delay: 6s;
-} 
+    animation-delay: 9s;
+    -webkit-animation-delay: 9s;
+}
 
-#part-2-texts h1 {
-    top: 20%;
+.Gisborne {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+#part-2-texts > h1 {
+    top: 10%;
     left: 0;
     position: absolute;
     font-weight: bold;
@@ -289,61 +282,98 @@ aside {
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px #000;
-    animation: part2Animation2 13s forwards;
-    -webkit-animation: part2Animation2 13s forwards;
+    animation: part2Animation2 12s forwards;
+    -webkit-animation: part2Animation2 12s forwards;
     animation-iteration-count: 1s;
 }
 
-#part-2-texts h1:nth-of-type(2) {
+#part-2-texts > h1:nth-of-type(2) {
     left: 10%;
     animation-delay: 3s;
     -webkit-animation-delay: 3s;
 }
 
-#part-2-texts h1:nth-of-type(3) {
+#part-2-texts > h1:nth-of-type(3) {
+    top: 45%;
+    left: 10%;
     animation-delay: 6s;
     -webkit-animation-delay: 6s;
 }
 
-#part-2-texts h1:nth-of-type(4) {
-    animation-delay: 9s;
-    -webkit-animation-delay: 9s;
-}
-
-#part-2-texts h1:nth-of-type(5) {
-    animation-delay: 9s;
-    -webkit-animation-delay: 9s;
-}
-
-.part2-txt-4 {
-    z-index: 2;
+.part-2-txt-4 {
+    top: 10%;
+    left: 20%;
+    line-height: 50px;
     position: absolute;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    opacity: 0;
+    animation: imgAnimation3 3s forwards;
+    -webkit-animation: imgAnimation3 3s forwards;
+    animation-delay: 9s;
+    -webkit-animation-delay: 9s;
+    z-index: 2;
 }
 
 .part-2-txt-5 {
-    z-index: 2;
+    top: 70%;
+    left: 0;
     position: absolute;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    opacity: 0;
+    animation: imgAnimation3 2s forwards;
+    -webkit-animation: imgAnimation3 2s forwards;
+    animation-delay: 11s;
+    -webkit-animation-delay: 11s;
+    z-index: 2;
 }
 
 #part-2-texts a {
-    top: 50%;
+    top: 45%;
     left: 40%;
-    width: 100px;
-    height: 100px;
+    width: 55px;
+    height: 45px;
     opacity: 0;
+    line-height: 15px;
     position: absolute;
     text-align: center;
     padding: 20px;
+    z-index: 2;
     color: #fff;
     text-decoration: none;
-    background-color: purple;
-    border: 1px solid purple;
+    background-color: #800080;
+    border: 1px solid #800080;
     border-radius: 50%;
-    animation: imgAnimation1 4s;
-    -webkit-animation: imgAnimation1 4s;
+    animation: btnAnimation 0.5s forwards;
+    -webkit-animation: btnAnimation 0.5s forwards;
     animation-iteration-count: 1s;
-    animation-delay: 9s;
-    -webkit-animation-delay: 9s;
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+#replay-btn {
+    background-image: url('../img/replay.png');
+    background-size: cover;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+    z-index: 3;
+    animation: imgAnimation3 2s forwards;
+    -webkit-animation: imgAnimation3 2s forwards;
+    animation-delay: 11s;
+    -webkit-animation-delay: 11s;
 }
 
 /* footer */
@@ -368,8 +398,8 @@ label {
 }
 
 @keyframes imgAnimation2 {
-    0% {margin-right: 200px; opacity:0;}
-    50% {margin-right: 0px; opacity:1;}
+    0% {margin-left: 200px; opacity:1;}
+    50% {margin-left: 0px; opacity:1;}
     100% {opacity:0;}
 }
 
@@ -380,32 +410,26 @@ label {
 }
 
 @keyframes txtAnimation1 {
-    0% { opacity: 1;}
-    25% {opacity: 1;}
-    50% {font-size: 150px; opacity: 1;}
-    75% {opacity:1;}
+    0% {opacity: 1; color: blue;}
+    50% {font-size: 100px; color: red; opacity: 1;}
     100% {font-size: 0px; color: red; opacity: 1;}
 }
 
 @keyframes txtAnimation2 {
     0% { opacity: 1;}
-    25% {opacity: 1;}
-    50% {font-size: 150px; opacity: 1;}
-    75% {opacity:1;}
+    50% {font-size: 100px; opacity: 1;}
     100% {font-size: 0px; color: yellow; opacity: 1;}
 }
 
 @keyframes txtAnimation3 {
     0% { opacity: 1;}
-    25% {opacity: 1;}
     50% {font-size: 90px; opacity: 1;}
-    75% {opacity:1;}
     100% {font-size: 0px; color: yellow; opacity: 1;}
 }
 
 @keyframes txtAnimation4 {
-    0% {background-color: red; opacity: 0;}
-    100% {background-color: red; opacity: 1;}
+    0% {background-color: #ffff33; opacity: 0; border-radius: 0% 0% 0% 0%;}
+    100% {background-color: #d3d3d3; opacity: 1; border-radius: 20% 20% 20% 20%;}
 }
 
 @keyframes part2Animation1 {
@@ -417,11 +441,17 @@ label {
     100% {opacity: 1;}
 }
 
-@keyframes part2Animation2 {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 1;}
-    80% {opacity: 1;}
-    100% {opacity: 1;}
+@keyframes part2Animation2 { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes btnAnimation {
+    0% {margin-top: 150px; opacity:1;}
+    100% {margin-top: 0px; opacity:1;}
 }
