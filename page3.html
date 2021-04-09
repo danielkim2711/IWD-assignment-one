@@ -29,9 +29,9 @@
     <div id="top-menu">
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Page 1</a></li>
+                <li><a href="index.html">Page 1</a></li>
                 <li><a href="page2.html">Page 2</a></li>
-                <li><a href="page3.html">Page 3</a></li>
+                <li class="current"><a href="page3.html">Page 3</a></li>
                 <li><a href="page4.html">Page 4</a></li>
             </ul>
         </nav>
@@ -60,21 +60,22 @@
             <div class="section-left">
                 <div class="section-left-title">
                     <h1>Welcome</h1>
-                    <progress id="progress" value="25" max="100"></progress>
+                    <progress id="progress" value="75" max="100"></progress>
                 </div>
 
                 <form action="#">
 
-                    <label for="name">Please Give us your Name</label>
+                    <label for="name">Page3</label>
                     <input type="text" id="name" name="name" placeholder="Your Name">
                     <br>
-                    <label for="date">When would you like to stay?</label>
-                    <input type="date" id="date" name="date">
+                    <label for="color">Select your favourite colour:</label>
+                    <input type="color" id="color" value="#000000">
                     <br>
-                    <label for="radio">Radio Button 1</label>
-                    <input type="radio" id="radio" name="radio"> <input type="radio" id="radio" name="radio">
+                    <label for="range">Choose your number</label>
+                    <input type="number" min="0" max="10" value="1">
                 </form>
-                <button class="btn" onclick="document.location='page2.html'">Next</button>
+                <button class="btn" onclick="document.location='page2.html'">Previous</button>
+                <button class="btn" onclick="document.location='page4.html'">Next</button>
             </div>
         </section>
     </div>

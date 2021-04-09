@@ -29,10 +29,10 @@
     <div id="top-menu">
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Page 1</a></li>
+                <li><a href="index.html">Page 1</a></li>
                 <li><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
-                <li><a href="page4.html">Page 4</a></li>
+                <li class="current"><a href="page4.html">Page 4</a></li>
             </ul>
         </nav>
     </div>
@@ -60,21 +60,28 @@
             <div class="section-left">
                 <div class="section-left-title">
                     <h1>Welcome</h1>
-                    <progress id="progress" value="25" max="100"></progress>
+                    <progress id="progress" value="100" max="100"></progress>
                 </div>
 
                 <form action="#">
 
-                    <label for="name">Please Give us your Name</label>
+                    <label for="name">Page4</label>
                     <input type="text" id="name" name="name" placeholder="Your Name">
                     <br>
-                    <label for="date">When would you like to stay?</label>
-                    <input type="date" id="date" name="date">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
                     <br>
-                    <label for="radio">Radio Button 1</label>
-                    <input type="radio" id="radio" name="radio"> <input type="radio" id="radio" name="radio">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label>
+                    <br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label>
+                    <br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label>
+                    <br>
                 </form>
-                <button class="btn" onclick="document.location='page2.html'">Next</button>
+                <button class="btn" onclick="document.location=''">Submit</button>
             </div>
         </section>
     </div>

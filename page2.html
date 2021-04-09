@@ -29,8 +29,8 @@
     <div id="top-menu">
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Page 1</a></li>
-                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="index.html">Page 1</a></li>
+                <li class="current"><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
                 <li><a href="page4.html">Page 4</a></li>
             </ul>
@@ -60,21 +60,27 @@
             <div class="section-left">
                 <div class="section-left-title">
                     <h1>Welcome</h1>
-                    <progress id="progress" value="25" max="100"></progress>
+                    <progress id="progress" value="50" max="100"></progress>
                 </div>
 
                 <form action="#">
 
-                    <label for="name">Please Give us your Name</label>
+                    <label for="name">Page2</label>
                     <input type="text" id="name" name="name" placeholder="Your Name">
                     <br>
-                    <label for="date">When would you like to stay?</label>
-                    <input type="date" id="date" name="date">
+                    <label for="vol">Volume (between 0 and 50):</label>
+                    <input type="range" id="vol" name="vol" min="0" max="50">
                     <br>
-                    <label for="radio">Radio Button 1</label>
-                    <input type="radio" id="radio" name="radio"> <input type="radio" id="radio" name="radio">
+                    <label for="range">Choose option</label>
+                    <select name="fruit">
+                        <option value="apple">apple</option>
+                        <option value="orange">orange</option>
+                        <option value="grapes">grapes</option>
+                        <option value="tomato">tomato</option>
+                    </select>
                 </form>
-                <button class="btn" onclick="document.location='page2.html'">Next</button>
+                <button class="btn" onclick="document.location='index.html'">Previous</button>
+                <button class="btn" onclick="document.location='page3.html'">Next</button>
             </div>
         </section>
     </div>

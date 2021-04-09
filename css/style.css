@@ -196,6 +196,10 @@ form {
     margin-left: 300px;
 }
 
+#progress {
+    width: 350px;
+}
+
 form label {
     border: red 1px solid;
     display: inline-block;
@@ -207,11 +211,16 @@ form label {
     padding: 10px;
 }
 
-form input {
+form input, select {
     margin-left: 50px;
 }
 
-form .btn {
+form select {
+    width: 10%;
+    height: auto;
+}
+
+.btn {
     width: 120px;
     height: 70px;
     margin: 130px 0px 20px 250px;
@@ -221,6 +230,7 @@ form .btn {
 
 #part-2 {
     position: relative;
+    overflow: hidden;
 }
 
 aside {
@@ -230,6 +240,12 @@ aside {
     height: 700px;
 }
 
+.Gisborne {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
 #part-2-images > img {
     top: 0;
     left: 0;
@@ -237,25 +253,25 @@ aside {
     height: 100%;
     position: absolute;
     opacity: 0;
-    animation: part2Animation1 12s forwards;
-    -webkit-animation: part2Animation1 12s forwards;
+    animation: part2Animation1 forwards 8s;
+    -webkit-animation: part2Animation1 forwards 8s;
     animation-iteration-count: 1s;
 }
 
-#part-2-images > img:nth-child(2) {
-    animation-delay: 3s;
-    -webkit-animation-delay: 3s;
+#part-2-images > img:nth-of-type(2) {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
 }
 
-#part-2-images > img:nth-child(3) {
+#part-2-images > img:nth-of-type(3) {
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+#part-2-images > img:nth-of-type(4) {
     animation-delay: 6s;
     -webkit-animation-delay: 6s;
-}
-
-#part-2-images > img:nth-child(4) {
-    animation-delay: 9s;
-    -webkit-animation-delay: 9s;
-}
+} 
 
 #part-2-texts h1 {
     top: 20%;
@@ -290,9 +306,18 @@ aside {
 }
 
 #part-2-texts h1:nth-of-type(5) {
-    top: 70%;
     animation-delay: 9s;
     -webkit-animation-delay: 9s;
+}
+
+.part2-txt-4 {
+    z-index: 2;
+    position: absolute;
+}
+
+.part-2-txt-5 {
+    z-index: 2;
+    position: absolute;
 }
 
 #part-2-texts a {
@@ -379,25 +404,19 @@ label {
 }
 
 @keyframes part2Animation1 {
-    0% {opacity: 0; animation-timing-function: ease-in}
-    8% {opacity: 1; animation-timing-function: ease-out;}
-    17% {opacity: 1;}
-    25% {opacity: 0;}
-    100% {opacity: 0;}
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 @keyframes part2Animation2 {
     0% {opacity: 0;}
-    10% {opacity: 1;}
     20% {opacity: 1;}
-    30% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
-@keyframes part2Animation3 {
-    0% {opacity: 0; animation-timing-function: ease-in}
-    8% {opacity: 1; animation-timing-function: ease-out;}
-    17% {opacity: 1;}
-    25% {opacity: 1;}
-    100% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
 }
