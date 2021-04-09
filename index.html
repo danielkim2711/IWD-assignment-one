@@ -32,7 +32,7 @@
                 <li class="current"><a href="index.html">Page 1</a></li>
                 <li><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
-                <li><a href="page4.html">Page 4</a></li>
+                <li><a href="summary.html">Page 4</a></li>
             </ul>
         </nav>
     </div>
@@ -63,16 +63,24 @@
                     <progress id="progress" value="25" max="100"></progress>
                 </div>
 
-                <form action="#">
+                <form action="summary.html" method="GET">
+                    <div>
+                        <label for="name">Please Give us your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
 
-                    <label for="name">Please Give us your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-                    <br>
-                    <label for="date">When would you like to stay?</label>
-                    <input type="date" id="date" name="date">
-                    <br>
-                    <label for="radio">Radio Button 1</label>
-                    <input type="radio" id="radio" name="radio"> <input type="radio" id="radio" name="radio">
+                    <div>
+                        <label for="date">When would you like to stay?</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div>
+                        <p>Do you need to use any equipment?</p>
+                        <label class="radio" for="yes">Yes</label>
+                        <input type="radio" id="yes" name="select">
+                        <label class="radio" for="no">No</label>
+                        <input type="radio" id="no" name="select">
+                    </div>
                 </form>
                 <button class="btn" onclick="document.location='page2.html'">Next</button>
             </div>

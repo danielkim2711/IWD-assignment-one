@@ -32,7 +32,7 @@
                 <li><a href="index.html">Page 1</a></li>
                 <li><a href="page2.html">Page 2</a></li>
                 <li class="current"><a href="page3.html">Page 3</a></li>
-                <li><a href="page4.html">Page 4</a></li>
+                <li><a href="summary.html">Page 4</a></li>
             </ul>
         </nav>
     </div>
@@ -63,19 +63,24 @@
                     <progress id="progress" value="75" max="100"></progress>
                 </div>
 
-                <form action="#">
+                <form action="summary.html" method="GET">
+                    <div>
+                        <label for="name">Page3</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
 
-                    <label for="name">Page3</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-                    <br>
-                    <label for="color">Select your favourite colour:</label>
-                    <input type="color" id="color" value="#000000">
-                    <br>
-                    <label for="range">Choose your number</label>
-                    <input type="number" min="0" max="10" value="1">
+                    <div>
+                        <label for="color">Select your favourite colour:</label>
+                        <input type="color" id="color" value="#000000">
+                    </div>
+
+                    <div>
+                        <label for="range">How many people are there in your group?</label>
+                        <input type="number" min="0" max="10" value="1">
+                    </div>
                 </form>
                 <button class="btn" onclick="document.location='page2.html'">Previous</button>
-                <button class="btn" onclick="document.location='page4.html'">Next</button>
+                <button class="btn" onclick="document.location='summary.html'">Next</button>
             </div>
         </section>
     </div>

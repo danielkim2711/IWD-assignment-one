@@ -32,7 +32,7 @@
                 <li><a href="index.html">Page 1</a></li>
                 <li class="current"><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
-                <li><a href="page4.html">Page 4</a></li>
+                <li><a href="summary.html">Page 4</a></li>
             </ul>
         </nav>
     </div>
@@ -63,21 +63,25 @@
                     <progress id="progress" value="50" max="100"></progress>
                 </div>
 
-                <form action="#">
+                <form action="summary.html" method="GET">
+                    <div>
+                        <label for="name">Page2</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
 
-                    <label for="name">Page2</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-                    <br>
-                    <label for="vol">Volume (between 0 and 50):</label>
-                    <input type="range" id="vol" name="vol" min="0" max="50">
-                    <br>
-                    <label for="range">Choose option</label>
-                    <select name="fruit">
-                        <option value="apple">apple</option>
-                        <option value="orange">orange</option>
-                        <option value="grapes">grapes</option>
-                        <option value="tomato">tomato</option>
-                    </select>
+                    <div>
+                        <label for="vol">Volume (between 0 and 50):</label>
+                        <input type="range" id="vol" name="vol" min="0" max="50">
+                    </div>
+
+                    <div>
+                        <label for="range">What time would you like to book in?</label>
+                        <select name="booking-time">
+                            <option value="time-1">9:00 AM</option>
+                            <option value="time-2">9:30 AM</option>
+                            <option value="time-3">10:00 AM</option>
+                        </select>
+                    </div>
                 </form>
                 <button class="btn" onclick="document.location='index.html'">Previous</button>
                 <button class="btn" onclick="document.location='page3.html'">Next</button>

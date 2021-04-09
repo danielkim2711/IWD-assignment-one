@@ -193,22 +193,28 @@ section {
 
 form {
     margin-top: 50px;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 
 #progress {
     width: 350px;
 }
 
-form label {
+form label, p {
     border: red 1px solid;
-    display: inline-block;
     font-weight: bold;
-    padding: 1rem;
     text-align: left;
     margin-top: 15px;
     width: 30%;
     padding: 10px;
+}
+
+.radio {
+    font-weight: normal;
+    border: none;
+    padding: 0;
+    width: auto;
+    margin: 0;
 }
 
 form input, select {
