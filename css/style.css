@@ -359,14 +359,43 @@ form select {
     -webkit-animation-delay: 10s;
 }
 
+#airnz {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    z-index: 1;
+    top: 0%;
+    right: 0%;
+    left: 85%;
+    animation: logoAnimation 1s;
+    -webkit-animation: logoAnimation 1s;
+}
+
+#airnz2 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    opacity: 0;
+    z-index: 1;
+    top: 1%;
+    right: 0%;
+    left: 39%;
+    animation: imgAnimation3 3s forwards;
+    -webkit-animation: imgAnimation3 3s forwards;
+    animation-delay: 9s;
+    -webkit-animation-delay: 9s;
+}
+
 #replay-btn {
     background-image: url('../img/replay.png');
     background-size: cover;
     position: absolute;
-    top: 0%;
+    top: 95%;
     right: 0%;
-    height: 30px;
-    width: 30px;
+    left: 0%;
+    height: 35px;
+    width: 35px;
     opacity: 0;
     z-index: 3;
     animation: imgAnimation3 2s forwards;
@@ -448,6 +477,11 @@ label {
     17% { opacity: 1 }
     25% { opacity: 0 }
     100% { opacity: 0 }
+}
+
+@keyframes logoAnimation {
+    0% {margin-left: 80px; opacity:1;}
+    100% {margin-left: 0px; opacity:1;}
 }
 
 @keyframes btnAnimation {
