@@ -62,29 +62,38 @@
         <section id="part-3">
             <div class="section-left">
                 <div class="section-left-title">
-                    <h1>Booking Information</h1>
+                    <h1>Welcome to Booking</h1>
                     <progress id="progress" value="25" max="100"></progress>
                 </div>
 
-                <form action="page2.html" method="GET">
+                <form action="summary.html" method="GET">
                     <div>
-                        <label for="name">Enter your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="Name" placeholder="Name" required>
                     </div>
 
                     <div>
                         <label for="date">When would you like to stay?</label>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="Date" required>
                     </div>
 
-                    <div>
-                        <p>Would you like to use any equipment? (E.g. Swimming goggles, surf board)</p>
+                    <div id="equipment">
+                        <label>Would you like to use any equipment? (E.g. Swimming goggles, surf board)</label>
                         <label class="radio" for="yes">Yes</label>
-                        <input type="radio" id="yes" name="select" value="yes">
+                        <input type="radio" id="yes" name="Equipment" value="Yes" required>
                         <label class="radio" for="no">No</label>
-                        <input type="radio" id="no" name="select" value="no">
+                        <input type="radio" id="no" name="Equipment" value="No" required>
                     </div>
-                    <button class="btn" onclick="document.location='page2.html'">Next</button>
+
+                    <div id="equipment">
+                        <label>Would you like to use a cooking facility?</label>
+                        <label class="radio" for="yes">Yes</label>
+                        <input type="radio" id="yes" name="Cooking Facility" value="Yes" required>
+                        <label class="radio" for="no">No</label>
+                        <input type="radio" id="no" name="Cooking Facility" value="No" required>
+                    </div>
+
+                    <button class="btn" type="submit">Next</button>
                 </form>
 
             </div>
@@ -92,7 +101,7 @@
     </div>
 
     <footer>
-        &copy; Daniel Kim 2021
+        &copy; Daniel Kim 1460482 2021
     </footer>
 
     <script src="js/main.js"></script>

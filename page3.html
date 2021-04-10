@@ -66,30 +66,26 @@
                     <progress id="progress" value="75" max="100"></progress>
                 </div>
 
-                <form action="page4.html" method="GET">
+                <form action="summary.html" method="GET">
                     <div>
-                        <label for="name">Page3</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <label for="color">What colour would you like for your equipment?</label>
+                        <input type="color" name="Equipment Colour" id="color" value="#000000" required>
                     </div>
 
                     <div>
-                        <label for="color">Select your favourite colour:</label>
-                        <input type="color" name="color" id="color" value="#000000">
+                        <label for="range">How many people are there in your group? (adults and children)</label>
+                        <input type="number" name="People in the group" id="range" min="1" max="50" value="1" required>
                     </div>
-
-                    <div>
-                        <label for="range">How many people are there in your group?</label>
-                        <input type="number" min="0" max="10" value="1">
-                    </div>
+                    <button type="submit" class="btn" onclick="document.location='page2.html'">Previous</button>
+                    <button class="btn" type="submit">Next</button>
                 </form>
-                <button type="submit" class="btn" onclick="document.location='page2.html'">Previous</button>
-                <button type="submit" class="btn" onclick="document.location='page4.html'">Next</button>
+
             </div>
         </section>
     </div>
 
     <footer>
-        &copy; Daniel Kim 2021
+        &copy; Daniel Kim 1460482 2021
     </footer>
 
     <script src="js/main.js"></script>

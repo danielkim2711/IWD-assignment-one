@@ -66,27 +66,22 @@
                     <progress id="progress" value="50" max="100"></progress>
                 </div>
 
-                <form action="page3.html" method="GET">
+                <form action="summary.html" method="GET">
                     <div>
-                        <label for="name">Page2</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name">
-                    </div>
-
-                    <div>
-                        <label for="vol">Volume (between 0 and 50):</label>
-                        <input type="range" id="vol" name="vol" min="0" max="50">
+                        <label for="vol">Volumn</label>
+                        <input type="range" id="vol" name="vol" min="0" max="50" required>
                     </div>
 
                     <div>
                         <label for="booking">What time would you like to book in?</label>
-                        <select name="booking-time" id="booking">
+                        <select name="Booking Time" id="booking">
                             <option value="9:00 AM">9:00 AM</option>
                             <option value="9:30 AM">9:30 AM</option>
                             <option value="10:00 AM">10:00 AM</option>
                         </select>
                     </div>
                     <button class="btn" onclick="document.location='index.html'">Previous</button>
-                    <button type="submit" class="btn" onclick="document.location='page3.html'">Next</button>
+                    <button class="btn" type="submit">Next</button>
                 </form>
 
             </div>
@@ -94,7 +89,7 @@
     </div>
 
     <footer>
-        &copy; Daniel Kim 2021
+        &copy; Daniel Kim 1460482 2021
     </footer>
 
     <script src="js/main.js"></script>

@@ -3,13 +3,14 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.2em;
-    background-color: #e5e5e5;
+    background-image: url("/img/Gisborne.jpg");
+    text-shadow: 1px 1px #fff;
 }
 
 /* header */
 
 .container {
-    border: 5px solid #ff0000;
+    box-shadow: 5px 10px 8px #888888;
     height: 430px;
     position: relative;
     overflow: hidden;
@@ -49,12 +50,13 @@ body {
 
 .part1-text-3 {
     position: absolute;
-    top: 105px;
-    left: 32%;
+    top: 0;
+    left: 42%;
     opacity: 0;
     color: #fff;
-    animation: txtAnimation3;
-    -webkit-animation: txtAnimation3;
+    font-size: 50px;
+    animation: txtAnimation3 forwards ease-in;
+    -webkit-animation: txtAnimation3 forwards ease-in;
     animation-iteration-count: 1;
     animation-duration: 4s;
     animation-delay: 8s;
@@ -70,12 +72,8 @@ body {
     animation: txtAnimation4 forwards;
     -webkit-animation: txtAnimation4 forwards;
     animation-iteration-count: 1;
-    animation-duration: 4s;
-    animation-delay: 8s;
-}
-
-.piha-img-3 a {
-    color: green;
+    animation-duration: 6s;
+    animation-delay: 10s;
 }
 
 /* images */
@@ -126,6 +124,7 @@ body {
 /* navigation */
 
 #top-menu {
+    box-shadow: 5px 10px 8px #888888;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -134,7 +133,6 @@ nav {
     width: 100%;
     height: 60px;
     padding: 3px 0;
-    border: purple solid 2px;
 }
 
 nav a {
@@ -155,16 +153,20 @@ nav li {
     margin-bottom: 10px;
 }
 
+.current a {
+    color: #ff0000;
+}
+
 /* section */
 
 .section-aside {
-    border: 2px yellow solid;
+    box-shadow: 5px 10px 8px #888888;
     width: 100%;
     height: 100%;
 }
 
 section {
-    border: 3px solid blue;
+    box-shadow: 5px 10px 8px #888888;
     padding: 25px;
     width: 70%;
     height: 650px;
@@ -173,32 +175,34 @@ section {
 .section-left {
     width: 100%;
     height: 100%;
-    border: 2px solid black;
     padding: 0;
     margin: 0;
 }
 
 .section-left-title {
-    border: 1px solid red;
     margin-left: 50px;
     text-align: center;
 }
 
+.section-left-title h1 {
+    font-size: 40px;
+}
+
 form {
-    margin-top: 50px;
-    margin-left: 250px;
-    margin-bottom: 100px;
+    width: 75%;
+    height: 70%;
+    margin: 30px 0px 0px 300px;
 }
 
 #progress {
     width: 350px;
 }
 
-form label, p {
-    border: red 1px solid;
+form label {
     font-weight: bold;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-right: 30px;
     width: 40%;
     padding: 10px;
 }
@@ -211,8 +215,12 @@ form label, p {
     width: auto;
 }
 
-form input, select {
-    margin-left: 30px;
+form input, select, .radio {
+    margin-left: 50px;
+}
+
+form #equipment input {
+    margin: 0;
 }
 
 form select {
@@ -222,8 +230,30 @@ form select {
 
 #part-3 .btn {
     cursor: pointer;
+    margin-top: 50px;
+    margin-left: 200px;
     width: 120px;
     height: 70px;
+}
+
+#summary {
+    margin-left: 450px;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+#submitted {
+    margin-top: 300px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#check {
+    position: absolute;
+    top: 900px;
+    left: 650px;
+    width: 10%;
+    height: 20%;
 }
 
 /* aside */
@@ -231,7 +261,6 @@ form select {
 #part-2 {
     position: relative;
     overflow: hidden;
-    border: 5px solid green;
     float: right;
     width: 25%;
     height: 700px;
@@ -320,7 +349,7 @@ form select {
 
 .part-2-txt-5 {
     top: 70%;
-    left: 0;
+    left: 20px;
     position: absolute;
     font-weight: bold;
     font-family: 'Kaushan Script', cursive;
@@ -349,6 +378,7 @@ form select {
     z-index: 2;
     color: #fff;
     text-decoration: none;
+    text-shadow: none;
     background-color: #800080;
     border: 1px solid #800080;
     border-radius: 50%;
@@ -408,7 +438,6 @@ form select {
 /* footer */
 
 footer {
-    border: 5px solid red;
     margin-top: 5px;
     text-align: center;
 }
@@ -481,25 +510,25 @@ label {
 }
 
 @keyframes txtAnimation3 {
-    0% { opacity: 1;}
-    50% {font-size: 90px; opacity: 1;}
-    100% {font-size: 0px; color: yellow; opacity: 1;}
+    0% { opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 @-webkit-keyframes txtAnimation3 {
-    0% { opacity: 1;}
-    50% {font-size: 90px; opacity: 1;}
-    100% {font-size: 0px; color: yellow; opacity: 1;}
+    0% { opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 @keyframes txtAnimation4 {
-    0% {background-color: #ffff33; opacity: 0; border-radius: 0% 0% 0% 0%;}
-    100% {background-color: #d3d3d3; opacity: 1; border-radius: 20% 20% 20% 20%;}
+    0% {background-color: #ffff33; opacity: 0; border-radius: 50% 50% 50% 50%;}
+    100% {background-color: #0000ff; opacity: 1; border-radius: 0% 0% 0% 0%;}
 }
 
 @-webkit-keyframes txtAnimation4 {
-    0% {background-color: #ffff33; opacity: 0; border-radius: 0% 0% 0% 0%;}
-    100% {background-color: #d3d3d3; opacity: 1; border-radius: 20% 20% 20% 20%;}
+    0% {background-color: #ffff33; opacity: 0; border-radius: 50% 50% 50% 50%;}
+    100% {background-colo: #0000ff; opacity: 1; border-radius: 0% 0% 0% 0%;}
 }
 
 @keyframes part2Animation1 {
