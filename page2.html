@@ -27,10 +27,10 @@
     <div id="top-menu">
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Page 1</a></li>
-                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="index.html">Page 1</a></li>
+                <li class="current"><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
-                <li><a href="summary.html">Page 4</a></li>
+                <li><a href="page4.html">Page 4</a></li>
             </ul>
         </nav>
     </div>
@@ -53,17 +53,20 @@
             <h1 class="part-2-txt-4">See Gisborne <br>in a new light</h1>
             <h1 class="part-2-txt-5">Daniel Kim 1460482</h1>
 
+            <img id="airnz" src="img/airnz.png" alt="Air New Zealand Logo">
+            <img id="airnz2" src="img/airnz2.png" alt="Air New Zealand Logo">
+
             <button id="replay-btn" onclick="replayBtn()"></button>
         </aside>
 
         <section id="part-3">
             <div class="section-left">
                 <div class="section-left-title">
-                    <h1>Welcome</h1>
+                    <h1>Booking Information</h1>
                     <progress id="progress" value="50" max="100"></progress>
                 </div>
 
-                <form action="summary.html" method="GET">
+                <form action="page3.html" method="GET">
                     <div>
                         <label for="name">Page2</label>
                         <input type="text" id="name" name="name" placeholder="Your Name">
@@ -75,20 +78,20 @@
                     </div>
 
                     <div>
-                        <label for="range">What time would you like to book in?</label>
-                        <select name="booking-time">
-                            <option value="time-1">9:00 AM</option>
-                            <option value="time-2">9:30 AM</option>
-                            <option value="time-3">10:00 AM</option>
+                        <label for="booking">What time would you like to book in?</label>
+                        <select name="booking-time" id="booking">
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="9:30 AM">9:30 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
                         </select>
                     </div>
+                    <button class="btn" onclick="document.location='index.html'">Previous</button>
+                    <button type="submit" class="btn" onclick="document.location='page3.html'">Next</button>
                 </form>
-                <button class="btn" onclick="document.location='index.html'">Previous</button>
-                <button class="btn" onclick="document.location='page3.html'">Next</button>
+
             </div>
         </section>
     </div>
-
 
     <footer>
         &copy; Daniel Kim 2021

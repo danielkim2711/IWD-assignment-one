@@ -9,7 +9,8 @@ function replayBtn() {
 
 }
 
-const resultsList = document.getElementById('results')
+const summaryList = document.getElementById('summary')
 new URLSearchParams(window.location.search).forEach((value, name) => {
-    resultsList.append('')
+    summaryList.append(`${name}: ${value}`)
+    summaryList.append(document.createElement('br'))
 })

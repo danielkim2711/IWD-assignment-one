@@ -30,7 +30,7 @@
                 <li class="current"><a href="index.html">Page 1</a></li>
                 <li><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
-                <li><a href="summary.html">Page 4</a></li>
+                <li><a href="page4.html">Page 4</a></li>
             </ul>
         </nav>
     </div>
@@ -66,7 +66,7 @@
                     <progress id="progress" value="25" max="100"></progress>
                 </div>
 
-                <form action="summary.html" method="GET">
+                <form action="page2.html" method="GET">
                     <div>
                         <label for="name">Enter your Name</label>
                         <input type="text" id="name" name="name" placeholder="Your Name">
@@ -80,16 +80,16 @@
                     <div>
                         <p>Would you like to use any equipment? (E.g. Swimming goggles, surf board)</p>
                         <label class="radio" for="yes">Yes</label>
-                        <input type="radio" id="yes" name="select">
+                        <input type="radio" id="yes" name="select" value="yes">
                         <label class="radio" for="no">No</label>
-                        <input type="radio" id="no" name="select">
+                        <input type="radio" id="no" name="select" value="no">
                     </div>
+                    <button class="btn" onclick="document.location='page2.html'">Next</button>
                 </form>
-                <button class="btn" onclick="document.location='page2.html'">Next</button>
+
             </div>
         </section>
     </div>
-
 
     <footer>
         &copy; Daniel Kim 2021

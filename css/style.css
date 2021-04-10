@@ -220,10 +220,10 @@ form select {
     height: 40px;
 }
 
-.btn {
+#part-3 .btn {
+    cursor: pointer;
     width: 120px;
     height: 70px;
-    margin: 50px 0px 20px 300px;
 }
 
 /* aside */
@@ -391,6 +391,7 @@ form select {
     background-image: url('../img/replay.png');
     background-size: cover;
     position: absolute;
+    cursor: pointer;
     top: 95%;
     right: 0%;
     left: 0%;
@@ -425,7 +426,19 @@ label {
     100% {opacity:0;}
 }
 
+@-webkit-keyframes imgAnimation1 {
+    0% {margin-top: 200px; opacity:1;}
+    50% {margin-top: 0px; opacity:1}
+    100% {opacity:0;}
+}
+
 @keyframes imgAnimation2 {
+    0% {margin-left: 200px; opacity:1;}
+    50% {margin-left: 0px; opacity:1;}
+    100% {opacity:0;}
+}
+
+@-webkit-keyframes imgAnimation2 {
     0% {margin-left: 200px; opacity:1;}
     50% {margin-left: 0px; opacity:1;}
     100% {opacity:0;}
@@ -437,7 +450,19 @@ label {
     100% {opacity:1;}
 }
 
+@-webkit-keyframes imgAnimation3 {
+    0% {opacity: 0;}
+    50% {opacity:1;}
+    100% {opacity:1;}
+}
+
 @keyframes txtAnimation1 {
+    0% {opacity: 1; color: blue;}
+    50% {font-size: 100px; color: red; opacity: 1;}
+    100% {font-size: 0px; color: red; opacity: 1;}
+}
+
+@-webkit-keyframes txtAnimation1 {
     0% {opacity: 1; color: blue;}
     50% {font-size: 100px; color: red; opacity: 1;}
     100% {font-size: 0px; color: red; opacity: 1;}
@@ -449,7 +474,19 @@ label {
     100% {font-size: 0px; color: yellow; opacity: 1;}
 }
 
+@-webkit-keyframes txtAnimation2 {
+    0% { opacity: 1;}
+    50% {font-size: 100px; opacity: 1;}
+    100% {font-size: 0px; color: yellow; opacity: 1;}
+}
+
 @keyframes txtAnimation3 {
+    0% { opacity: 1;}
+    50% {font-size: 90px; opacity: 1;}
+    100% {font-size: 0px; color: yellow; opacity: 1;}
+}
+
+@-webkit-keyframes txtAnimation3 {
     0% { opacity: 1;}
     50% {font-size: 90px; opacity: 1;}
     100% {font-size: 0px; color: yellow; opacity: 1;}
@@ -460,7 +497,21 @@ label {
     100% {background-color: #d3d3d3; opacity: 1; border-radius: 20% 20% 20% 20%;}
 }
 
+@-webkit-keyframes txtAnimation4 {
+    0% {background-color: #ffff33; opacity: 0; border-radius: 0% 0% 0% 0%;}
+    100% {background-color: #d3d3d3; opacity: 1; border-radius: 20% 20% 20% 20%;}
+}
+
 @keyframes part2Animation1 {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes part2Animation1 {
     0% {opacity: 0;}
     20% {opacity: 1;}
     40% {opacity: 1;}
@@ -479,12 +530,32 @@ label {
     100% { opacity: 0 }
 }
 
+@-webkit-keyframes part2Animation2 { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
 @keyframes logoAnimation {
     0% {margin-left: 80px; opacity:1;}
     100% {margin-left: 0px; opacity:1;}
 }
 
+@-webkit-keyframes logoAnimation {
+    0% {margin-left: 80px; opacity:1;}
+    100% {margin-left: 0px; opacity:1;}
+}
+
 @keyframes btnAnimation {
+    0% {margin-top: 150px; opacity:1;}
+    100% {margin-top: 0px; opacity:1;}
+}
+
+@-webkit-keyframes btnAnimation {
     0% {margin-top: 150px; opacity:1;}
     100% {margin-top: 0px; opacity:1;}
 }
