@@ -31,6 +31,8 @@
                 <li><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
                 <li class="current"><a href="page4.html">Page 4</a></li>
+                <li><a href="storyboard1.pdf">Storyboard 1</a></li>
+                <li><a href="storyboard2.pdf">Storyboard 2</a></li>
             </ul>
         </nav>
     </div>
@@ -68,17 +70,18 @@
 
                 <form action="summary.html" method="GET">
                     <div>
-                        <label for="email">Email</label>
+                        <label for="email">Email:</label>
                         <input type="email" id="email" name="Email" placeholder="Email" required>
                     </div>
 
                     <div>
-                        <label for="agreement">I agree with the local native conservation initiative agreement.</label>
+                        <label for="agreement">I agree with the local native conservation initiative agreement. (Please
+                            tick the box)</label>
                         <input type="checkbox" id="agreement" name="Agreement" value="Yes" required>
                     </div>
 
-                    <button type="submit" class="btn" onclick="document.location='page3.html'">Previous</button>
-                    <button class="btn" type="submit">Submit</button>
+                    <button class="previous" type="button" onclick="location.href='page3.html'">Previous</button>
+                    <button class="next" type="submit">Submit</button>
                 </form>
 
             </div>

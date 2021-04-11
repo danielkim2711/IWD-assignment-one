@@ -31,6 +31,8 @@
                 <li class="current"><a href="page2.html">Page 2</a></li>
                 <li><a href="page3.html">Page 3</a></li>
                 <li><a href="page4.html">Page 4</a></li>
+                <li><a href="storyboard1.pdf">Storyboard 1</a></li>
+                <li><a href="storyboard2.pdf">Storyboard 2</a></li>
             </ul>
         </nav>
     </div>
@@ -66,10 +68,10 @@
                     <progress id="progress" value="50" max="100"></progress>
                 </div>
 
-                <form action="summary.html" method="GET">
+                <form action="page3.html" method="GET">
                     <div>
-                        <label for="vol">Volumn</label>
-                        <input type="range" id="vol" name="vol" min="0" max="50" required>
+                        <label for="feeling">Are you happy?<br>(0 is unhappy 10 is happiest)</label>
+                        <input type="range" id="feeling" name="Feeling" min="0" max="10" value="5" required>
                     </div>
 
                     <div>
@@ -80,8 +82,8 @@
                             <option value="10:00 AM">10:00 AM</option>
                         </select>
                     </div>
-                    <button class="btn" onclick="document.location='index.html'">Previous</button>
-                    <button class="btn" type="submit">Next</button>
+                    <button class="previous" type="button" onclick="location.href='index.html'">Previous</button>
+                    <button class="next" type="submit">Next</button>
                 </form>
 
             </div>

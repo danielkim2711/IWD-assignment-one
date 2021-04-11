@@ -2,7 +2,7 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
     background-image: url("/img/Gisborne.jpg");
     text-shadow: 1px 1px #fff;
 }
@@ -228,16 +228,30 @@ form select {
     height: 40px;
 }
 
-#part-3 .btn {
+#part-3 .next, .previous, .page1-btn {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: 50px;
-    margin-left: 200px;
     width: 120px;
-    height: 70px;
+    height: 80px;
+}
+
+.next, .previous {
+    margin-top: 150px;
+}
+
+.next {
+    margin-left: 400px;
+}
+
+.page1-btn {
+    margin-left: 350px;
+    margin-top: 60px;
 }
 
 #summary {
-    margin-left: 450px;
+    margin-left: 150px;
     font-size: 32px;
     margin-top: 30px;
 }
