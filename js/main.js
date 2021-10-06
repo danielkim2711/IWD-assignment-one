@@ -3,8 +3,8 @@ function pihaClick() {
 }
 
 function replayBtn() {
-  var selectedDiv = document.getElementById('part-2');
-  var newDiv = selectedDiv.cloneNode(true);
+  let selectedDiv = document.getElementById('part-2');
+  let newDiv = selectedDiv.cloneNode(true);
   selectedDiv.parentNode.replaceChild(newDiv, selectedDiv);
 }
 
